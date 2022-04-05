@@ -1,0 +1,36 @@
+﻿<Window x:Class="WPFcoding.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WPFcoding"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="479" Width="800">
+    <Grid RenderTransformOrigin="0.476,0.504" Margin="0,-12,0,-16">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="69*"/>
+            <ColumnDefinition Width="323*"/>
+            <ColumnDefinition Width="340*"/>
+            <ColumnDefinition Width="69*"/>
+        </Grid.ColumnDefinitions>
+        <Label Grid.Column="1" Content="Kodavimas" HorizontalAlignment="Left" Height="30" Margin="111,35,0,0" VerticalAlignment="Top" Width="100" FontSize="18"/>
+        <Label Grid.Column="1" Content="Įveskite slaptažodį:" HorizontalAlignment="Left" Height="26" Margin="101,94,0,0" VerticalAlignment="Top" Width="120"/>
+        <TextBox x:Name="passwEncode" Grid.Column="1" HorizontalAlignment="Left" Height="20" Margin="76,125,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="170"/>
+        <Label Grid.Column="1" Content="Įveskite koduojamą teksta:" HorizontalAlignment="Left" Height="26" Margin="85,155,0,0" VerticalAlignment="Top" Width="153"/>
+        <TextBox x:Name="textEncode" Grid.Column="1" HorizontalAlignment="Left" Height="56" TextWrapping="Wrap" VerticalAlignment="Top" Width="170" Margin="76,191,0,0"/>
+        <Label Grid.Column="1" Content="Užkoduotas tekstas:" HorizontalAlignment="Left" Height="26" Margin="85,304,0,0" VerticalAlignment="Top" Width="153"/>
+        <TextBox x:Name="Encode" Grid.Column="1" HorizontalAlignment="Left" Height="40" Margin="76,340,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="170"/>
+        <GridSplitter Grid.Column="1" HorizontalAlignment="Left" Height="271" Margin="313,124,0,0" VerticalAlignment="Top" Width="10" Grid.ColumnSpan="2"/>
+        <Label Grid.Column="2" Content="Dekodavimas" Height="30" Margin="108,35,0,0" VerticalAlignment="Top" FontSize="18" HorizontalAlignment="Left" Width="123"/>
+        <Label Grid.Column="2" Content="Įveskite slaptažodį:" HorizontalAlignment="Left" Height="26" Margin="109,89,0,0" VerticalAlignment="Top" Width="120"/>
+        <TextBox x:Name="passwDecode" Grid.Column="2" HorizontalAlignment="Left" Height="20" Margin="84,125,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="170"/>
+        <Label Grid.Column="2" Content="Užšifruotas tekstas:" HorizontalAlignment="Left" Height="26" Margin="116,155,0,0" VerticalAlignment="Top" Width="107"/>
+        <TextBox x:Name="textDecode" Grid.Column="2" HorizontalAlignment="Left" Height="56" TextWrapping="Wrap" VerticalAlignment="Top" Width="170" Margin="84,191,0,0"/>
+        <Label Grid.Column="2" Content="Dešifruotas tekstas:" Height="26" Margin="112,304,0,0" VerticalAlignment="Top" HorizontalAlignment="Left" Width="114"/>
+        <TextBox x:Name="Decode" Grid.Column="2" HorizontalAlignment="Left" Height="40" Margin="84,340,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="170"/>
+        <Button x:Name="Code" Grid.Column="1" Content="Koduoti" HorizontalAlignment="Left" Height="24" Margin="92,267,0,0" VerticalAlignment="Top" Width="138" Click="Code_Click"/>
+        <Button x:Name="Decode1" Grid.Column="2" Content="Dešifruoti" HorizontalAlignment="Left" Height="24" Margin="100,267,0,0" VerticalAlignment="Top" Width="138" Click="Decode_Click"/>
+        <Button x:Name="delete" Grid.Column="1" Content="Išvalyti" HorizontalAlignment="Left" Height="24" Margin="257,409,0,0" VerticalAlignment="Top" Width="138" Click="delete_Click" Grid.ColumnSpan="2"/>
+
+    </Grid>
+</Window>
